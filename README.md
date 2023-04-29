@@ -57,5 +57,6 @@ config/settings.py
 config/urls.py   
 apis/urls.py   
 apis/views.py   
-참고하시면 될거같습니다.
+참고하시면 될거같습니다.   
+만약 git pull해보실 거면 *pip install corsheaders* 하고 실행하셔야 될거에요 프론트랑 연결 시 필요해서 설치해둔 라이브러리에요!
 
