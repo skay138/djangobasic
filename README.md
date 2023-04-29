@@ -48,5 +48,14 @@ config/urls.py >> 요청 경로 설정 파일
 
 ## 서버 켜는 법
 1. *python manage.py runserver*
+   
 
+<hr/>
+
+### 2023-04-26 진행 상황
+config/settings.py   
+config/urls.py   
+apis/urls.py   
+apis/views.py   
+참고하시면 될거같습니다.
 
