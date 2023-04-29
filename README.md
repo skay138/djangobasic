@@ -13,7 +13,8 @@
 5. *pip install django*   
 *pip install djangorestframework* 등 기본적인 라이브러리 설치
 6. 프로젝트 폴더 생성하고 그 안으로 이동
-7. *django-admin startproject config .*>> 프로젝트 생성
+7. *django-admin startproject config .*>> 프로젝트 생성   
+
 이렇게 하면
 <pre>
 1.	폴더
@@ -24,7 +25,7 @@
         
   B.	가상환경 폴더
 </pre>
-이렇게 구성될 겁니다. 그리고 Vscode로는 A를 여는거죠.
+위와 같이 구성될 겁니다. 그리고 Vscode로는 A를 여는거죠.
 
 
 ## 프로젝트 구성하기(source (가상환경이름)/scripts/activate 선행)
