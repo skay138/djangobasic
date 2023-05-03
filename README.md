@@ -70,9 +70,27 @@ VScode에서 선택된 인터프리터가 가상환경의 python이 맞는지 �
 ### config
 
 #### settings.py
-1. django를 제외한 pip install 한 라이브러리들은 installed_apps에 추가해줘야합니다. (ex : rest_framework >> 얘는 djangorestframework였음에도 저렇게 적어야합니다.)
+1. django를 제외한 pip install 한 라이브러리들은 installed_apps에 추가해줘야합니다.
 2. 생성한 app 역시 installed_apps에 추가해줘야합니다.
 3. DB설정이나 IP접속허용 등 다양한 설정이 가능합니다.
+
+```
+#예시코드
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
+    #djangorestframework
+    'rest_framework',
+    
+    ## MY APPS
+    '추가한app이름',
+]
+```
 
 #### urls.py
 - 호출 경로를 지정해줍니다. 여기서는 각 app의 url만 연결해주면됩니다.
