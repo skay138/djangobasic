@@ -42,6 +42,7 @@ VScode에서 선택된 인터프리터가 가상환경의 python이 맞는지 �
 3. *cd ..* >> venv는 상위폴더에 있기 때문에 상위폴더로 이동
 4. *source (가상환경이름)/scripts/activate* >> 가상환경 실행
 가상환경이 켜져있다면 Git bash 커맨드라인에 (가상환경이름) 이런식으로 뜰겁니다.
+5. *cd (프로젝트폴더)* >> 다시 프로젝트 폴더로 이동해줍니다.
 
 1. *python manage.py startapp (테이블이름)* >> 본인의 취향에 맞게 app을 하나씩 만듬   
 	여기서 app은 DB의 테이블과 api, url 등을 관리하기 위한 친구라고 생각하세요
@@ -105,7 +106,7 @@ from rest_framework.decorators import api_view
 # Create your views here.
 
 @api_view(['GET'])
-def apis_view(request):
+def 예시_view(request):
     if request.method == 'GET':
         data = {
             "author" : "sangkyu",
