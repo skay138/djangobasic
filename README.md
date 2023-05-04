@@ -60,11 +60,13 @@ VScode에서 선택된 인터프리터가 가상환경의 python이 맞는지 �
 	여기서 app은 DB의 테이블과 api, url 등을 관리하기 위한 친구라고 생각하세요
 2. config/settings.py 의 installed_apps에 app을 추가해줘해요 그리구 설치한 라이브러리들 역시 여기에 명시해줘야합니다.
 
+```
 * config/settings.py >> Django 기본 설정 파일   
 * config/urls.py >> 요청 경로 설정 파일   
 * (app)/urls.py >> 해당 경로와 api function 연결 파일
 * (app)/views.py >> api 작성 파일
 * (app)/models.py >> table 작성 파일
+```
 
 여기서 원하는 기능을 작성 후 각각 파일을 저장한 뒤
 
