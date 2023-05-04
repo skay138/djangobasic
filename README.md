@@ -11,7 +11,9 @@
 1. 운영체제 : windows
 2. IDE : Visual Studio Code
 3. 언어 : python
-4. Shell(Command) : Git bash
+4. Shell(Command) : Git bash  
+
+**설치가 안되어있는 부분이 있다면 설치하고 진행해주세요. python을 웹사이트에서 설치 시 path추가에 체크하고 설치하셔야합니다!!**
 
 - [목차로 돌아가기](#django-basic)
 
@@ -162,7 +164,7 @@ urlpatterns = [
 
 1. *python manage.py runserver*
 2. api호출은 웹페이지에서 코드작성한 경로로 들어가면 기본적인 GET요청을 확인할 수 있습니다.
-3. Postman등 http통신(CRUD)를 해볼 수 있는 소프트웨어도 있으니 참고
+3. Postman등 http통신(CRUD)를 해볼 수 있는 소프트웨어도 있습니다. 나중에 다룰거에요
 
 - [목차로 돌아가기](#django-basic)
 <hr/>
