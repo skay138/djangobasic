@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POST 요청 보내기</title>
+  </head>
+  <body>
+    <h1>POST 요청 보내기</h1>
+
+    <form id="myForm">
+      <label for="author">작성자:</label>
+      <input type="text" id="author" name="author" required /><br /><br />
+
+      <label for="age">나이:</label>
+      <input type="number" id="age" name="age" required /><br /><br />
+
+      <label for="title">제목:</label>
+      <input type="text" id="title" name="title" required /><br /><br />
+
+      <label for="context">내용:</label><br />
+      <textarea id="context" name="context" required></textarea><br /><br />
+
+      <button type="submit">제출</button>
+    </form>
+
+    <script>
+      // form 제출 시 호출되는 함수
+      function submitForm(event) {
+        event.preventDefault(); // 기본 동작(페이지 새로고침) 방지
+
+        // 입력된 데이터 가져오기
+        var author = document.getElementById("author").value;
+        var age = document.getElementById("age").value;
+        var title = document.getElementById("title").value;
+        var context = document.getElementById("context").value;
+
+        // POST 요청 보내기
+        var xhr = new XMLHttpRequest();
+        var url = "http://localhost:8000/posts/"; // 요청을 보낼 URL
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // 요청이 성공적으로 완료되었을 때 처리할 코드 작성
+            console.log(xhr.responseText);
+          }
+        };
+        var data = JSON.stringify({
+          author: author,
+          age: age,
+          title: title,
+          context: context,
+        });
+        xhr.send(data);
+      }
+
+      // form 제출 이벤트 리스너 등록
+      var form = document.getElementById("myForm");
+      form.addEventListener("submit", submitForm);
+    </script>
+  </body>
+</html>
